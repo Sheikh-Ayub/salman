@@ -1,0 +1,130 @@
+body{
+margin:0;
+padding:0;
+font-family: 'Raleway', sans-serif;	
+box-sizing: border-box;
+
+}
+.carousel{
+	background:gray;
+	margin-bottom: 100px;
+	padding-top: 80px;
+}
+
+.carousel1{
+	background:gold;
+	margin-bottom: 100px;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.our-carousel-1 .item{
+	position: relative;
+}
+.our-carousel-1 .item:hover{
+ 	position: absolute;
+	left:0;
+	right: 0;
+	top: 0;
+	bottom: 0; 
+	background-color:#19a74c;
+}
+
+/*.item-1{
+	position: relative;
+}*/
+/*.team{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	display: none;
+}*/
+/*.item-1:hover .team{
+	display: block;
+}*/
+
+
+
+
+
+
+
+
+
+
+.team{
+	padding-top: 100px;
+	overflow: hidden;
+}
+.team-member img{
+	max-width: 100%;
+}
+.team-member{
+	position: relative;
+	text-align: center;
+	color: #fff;
+}
+.team-member:hover .team-hover-content {
+	top:0;
+}
+.team-member:hover .team-content {
+transform: translatey(-50%);
+}
+
+.team-content{
+	position: absolute;
+	top:50%;
+	transition: .5s;
+	
+}
+.team-content h4{
+	color: #fff;
+	font-size: 21;
+}
+.team-hover-content{
+position: absolute;
+background-color:rgba(0,0,0,.7);
+	left: 0;
+	right: 0;
+	top:100%;
+	bottom:0;
+	transition: .5s;
+	
+
+}
+.social{
+	background-color:#87bd4a;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom:-100px;
+	transition: 1s;	
+}
+.team-member:hover .social {
+	bottom:0px;
+
+}
+.social ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+flex-grow: 1;
+}
+.social ul li a{
+display: inline-block;
+padding: 15px 10px;
+color: #fff;
+}
+.social ul li a i{
+	transition: .5s;
+}
+.social ul li a:hover i{
+	transform: rotate(360deg);
+}
+/*.team .sec-titel{
+	margin-bottom: 80px;
+}*/
